@@ -1,26 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TypeProps from './screens/type-props/TypeProps';
 
 function App() {
   // npx create-react-app フォルダ名 --template typescript
   // npm start
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TypeProps username="CodeTips" notification={10} isLogin={true} />
+      {/* 型以外のpropsはエラーになる。 */}
+      {/* <TypeProps username=100 /> */}
+      {/* typeで定義した数だけpropsを渡さないといけない */}
+      {/* <TypeProps username="CodeTips" notification={10} /> */}
+      {/* 型間違いや渡し漏れなど表示前にエラーに気づける */}
     </div>
   );
 }
