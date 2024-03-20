@@ -1,18 +1,15 @@
 import React from 'react';
+import Dashboard from './components/Dashboard';
 
-type UserProps = {
-  username: string;
-  notification: number;
-  isLogin: boolean;
-};
-
-const TypeProps = (props: UserProps) => {
+const TypeProps = () => {
   return (
     <div>
-      {/* <h1>CodeTipsさん、おかえりなさい</h1> */}
-      <h1>{props.username}さん、おかえりなさい</h1>
-      {/* <p>新着の通知が3件あります。</p> */}
-      <p>新着の通知が{props.notification}件あります。</p>
+      <Dashboard username="CodeTips" notification={10} isLogin={true} />
+      {/* 型以外のpropsはエラーになる。 */}
+      {/* <TypeProps username=100 /> */}
+      {/* typeで定義した数だけpropsを渡さないといけない */}
+      {/* <TypeProps username="CodeTips" notification={10} /> */}
+      {/* 型間違いや渡し漏れなど表示前にエラーに気づける */}
     </div>
   );
 };
