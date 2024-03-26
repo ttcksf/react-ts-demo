@@ -13,6 +13,7 @@ const AdvanceProps = () => {
 
       {/* childrenについて */}
       <Text>チルドレンです</Text>
+      {/* コンポーネント自体をchildrenとして渡す */}
       <Wrapper>
         <Text>入れ子のチルドレンです。</Text>
       </Wrapper>

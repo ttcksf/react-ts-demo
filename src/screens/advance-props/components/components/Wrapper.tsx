@@ -1,5 +1,5 @@
 import React from 'react';
-
+// childrenだからstringとなりがちだが、コンポーネントファイルのためReact.ReactNodeというものを指定する
 type WrapperProps = {
   children: React.ReactNode;
 };
