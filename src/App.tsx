@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import UseReducerType from './screens/usereducer-type/components/UseReducerType';
+import UseReducerStrict from './screens/usereducer-strict/UseReducerStrict';
 
 function App() {
   // npx create-react-app フォルダ名 --template typescript
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <UseReducerType />
+      <UseReducerStrict />
     </div>
   );
 }
