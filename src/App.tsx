@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import GenericProps from './screens/generic-props/GenericProps';
+import GenericPropsAdvance from './screens/generic-props-advance/GenericPropsAdvance';
 
 function App() {
   // npx create-react-app フォルダ名 --template typescript
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <GenericProps />
+      <GenericPropsAdvance />
     </div>
   );
 }
